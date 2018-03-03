@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import YoutubeSearch from './Youtube-Search-Modal';
 import axios from 'axios';
 
 class Youtube extends Component {
@@ -40,6 +41,7 @@ class Youtube extends Component {
         return (
             <div>
                 <h2> Youtube component </h2>
+                <YoutubeSearch />
                 <div>{this.state.returnedVideos}</div>
             </div>
         )
